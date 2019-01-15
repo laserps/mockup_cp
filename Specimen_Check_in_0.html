@@ -45,7 +45,8 @@
           </button>
         </div>
         <div class="navbar-header">
-          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems"
+            aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">จุดที่ 1</a>
@@ -53,7 +54,8 @@
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 <i class="ti-bell nav-icon"></i>
                 <span class="notification">6</span>
                 <p class="hidden-lg-up"> Notifications <i class="fa fa-sort-desc submenu-toggle"></i>
@@ -140,7 +142,14 @@
                                   </select>
                                 </div>
                               </div>
+                              <div class="col-sm-6">
+                                <select class="form-control" id="sex">
+                                  <option>Specimen</option>
+                                  <option>Others</option>
+                                </select>
+                              </div>
                             </div>
+                          </div>
                         </div>
                         <table class="table" id="table">
                           <thead>
@@ -161,8 +170,13 @@
                               <th>Specimen No</th>
                             </tr>
                           </thead>
+<<<<<<< .mine
                           <tbody>
                             <tr v-for="(item,key) in items">
+=======
+                          <tbody>
+                            <tr v-for="(item,key) in items" v-bind:class="item.class">
+>>>>>>> .theirs
                               <td>
                                 <input type="checkbox" />
                               </td>
@@ -174,7 +188,7 @@
                               <td>{{item.testgroup}}</td>
                               <td>{{item.specimen}}</td>
                               <td>{{item.specimenno}}{{key}}</td>
-                              
+
                             </tr>
                           </tbody>
                           <tfoot>
@@ -370,24 +384,133 @@
   <script src="menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
   <script>
-      var example1 = new Vue({
-          el: '#table',
-          data: {
-              items: [
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-              ]
-          }
-      });
+    var example1 = new Vue({
+      el: '#table',
+      data: {
+        items: [{
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-light',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-warning',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-danger',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-success',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+          {
+            class: 'bg-success',
+            pid: '',
+            paitentname: 'พาเที่ยน เนม',
+            labno: '18920180001',
+            date: '31-12-2018 09:09:00',
+            source: 'S00',
+            testgroup: 'Special',
+            specimen: 'Others',
+            specimenno: '18112018000'
+          },
+        ]
+      }
+    });
   </script>
 </body>
 
