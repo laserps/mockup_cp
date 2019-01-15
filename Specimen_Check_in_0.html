@@ -161,8 +161,8 @@
                               <th>Specimen No</th>
                             </tr>
                           </thead>
-                          <tbody>
-                            <tr v-for="(item,key) in items">
+                          <tbody v-for="(item,key) in items" >
+                            <tr v-bind:class="item.class">
                               <td>
                                 <input type="checkbox" />
                               </td>
@@ -374,17 +374,127 @@
           el: '#table',
           data: {
               items: [
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
-                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+              {
+                        class: 'bg-light',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-light',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-light',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-warning',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-warning',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-warning',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-success',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-success',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-danger',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-success',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
+                    {
+                        class: 'bg-success',
+                        pid: '',
+                        paitentname: 'พาเที่ยน เนม',
+                        labno: '18920180001',
+                        date: '31-12-2018 09:09:00',
+                        source: 'S00',
+                        testgroup: 'Special',
+                        specimen: 'Others',
+                        specimenno: '18112018000'
+                    },
               ]
           }
       });
