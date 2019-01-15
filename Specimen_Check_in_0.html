@@ -161,15 +161,15 @@
                               <th width="5%">PID</th>
                               <th width="20%">Patient Name</th>
                               <th>Lab No.</th>
-                              <th>Date </th>
-                              <th>Source</th>
-                              <th>Test Group</th>
-                              <th>Specimen</th>
+                              <th>Request Date </th>
                               <th>Specimen No</th>
+                              <th>Specimen</th>
+                              <th>Test Group</th>
+                              <th>Test</th>
+                              
                             </tr>
                           </thead>
-                          <tbody>
-                            <tr v-for="(item,key) in items">
+                          <!-- PID / PNAME / LABNO / RD /SN / S / TG / T="Glucose lipid" -->
                           <tbody>
                             <tr v-for="(item,key) in items" v-bind:class="item.class">
                               <td>
@@ -179,16 +179,15 @@
                               <td>{{item.paitentname}}</td>
                               <td>{{item.labno}}{{key}}</td>
                               <td>{{item.date}}</td>
-                              <td>{{item.source}}</td>
-                              <td>{{item.testgroup}}</td>
-                              <td>{{item.specimen}}</td>
                               <td>{{item.specimenno}}{{key}}</td>
-
+                              <td>{{item.specimen}}</td>
+                              <td>{{item.testgroup}}</td>
+                              <td>{{item.test}}</td>
                             </tr>
                           </tbody>
                           <tfoot>
                             <tr>
-                              <td colspan="5"></td>
+                              <td colspan="4"></td>
                               <td><span class="bg-light px-3">New:</span> 34</td>
                               <td><span class="bg-warning px-3">Receive:</span> 34</td>
                               <td><span class="bg-success px-3">Complete:</span> 34</td>
@@ -390,7 +389,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-light',
@@ -401,7 +400,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-light',
@@ -412,7 +411,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-light',
@@ -423,7 +422,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-light',
@@ -434,7 +433,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-light',
@@ -445,7 +444,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-light',
@@ -456,7 +455,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-warning',
@@ -467,7 +466,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-danger',
@@ -478,7 +477,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-success',
@@ -489,7 +488,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
           {
             class: 'bg-success',
@@ -500,7 +499,7 @@
             source: 'S00',
             testgroup: 'Special',
             specimen: 'Others',
-            specimenno: '18112018000'
+            specimenno: '18112018000',test : 'Glucose lapid'
           },
         ]
       }
