@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vuejs sloop</title>
+</head>
+<body>
+
+    <table id="table">
+        <tbody>
+            <tr v-for="(item,key) in items">
+                <td>{{item.pid}}{{key}}</td>
+                <td>{{item.paitentname}}</td>
+                <td>{{item.labno}}{{key}}</td>
+                <td>{{item.source}}</td>
+                <td>{{item.testgroup}}</td>
+                <td>{{item.specimen}}</td>
+                <td>{{item.specimenno}}{{key}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+    <script>
+        var example1 = new Vue({
+            el: '#table',
+            data: {
+                items: [
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                    { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                ]
+            }
+        });
+    </script>   
+</body>
+</html>

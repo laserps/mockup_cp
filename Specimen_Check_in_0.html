@@ -106,7 +106,7 @@
                         <div class="row">
                           <div class="col-md-12"> </div>
                         </div>
-                        <table class="table">
+                        <table class="table" id="table">
                           <thead>
                             <tr>
                               <th class="align-middle" width="2%">
@@ -126,22 +126,20 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
+                            <tr v-for="(item,key) in items">
+
                               <td>
-                                <form>
-                                  <div class="form-group mb-0">
-                                    <input type="checkbox" />
-                                  </div>
-                                </form>
+                                <input type="checkbox" />
                               </td>
-                              <td>00</td>
-                              <td>นาย ธำรงค์ สุขสวัสดิ์</td>
-                              <td>1890159173 </td>
-                              <td>16-02-2018 11:23</td>
-                              <td>S154</td>
-                              <td>CLINICAL MICROSCOF</td>
-                              <td>Urine</td>
-                              <td>18901591737</td>
+                              <td>{{item.pid}}{{key}}</td>
+                              <td>{{item.paitentname}}</td>
+                              <td>{{item.labno}}{{key}}</td>
+                              <td>{{item.date}}</td>
+                              <td>{{item.source}}</td>
+                              <td>{{item.testgroup}}</td>
+                              <td>{{item.specimen}}</td>
+                              <td>{{item.specimenno}}{{key}}</td>
+                              
                             </tr>
                           </tbody>
                         </table>
@@ -330,7 +328,27 @@
   <!-- Material Dashboard javascript methods -->
   <script src="assets/js/inspire.js"></script>
   <script src="menu.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo> 2019
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+  <script>
+      var example1 = new Vue({
+          el: '#table',
+          data: {
+              items: [
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+                  { pid: '' , paitentname : 'พาเที่ยน เนม' , labno : '18920180001' ,date : '31-12-2018 09:09:00', source : 'S00' , testgroup : 'Special' , specimen : 'Others' , specimenno : '18112018000'},
+              ]
+          }
+      });
+  </script>
 </body>
 
 </html>
