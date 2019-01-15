@@ -16,49 +16,54 @@ var menu = [
 		name : 'Specimen check-in',
 		link : '',
 		icon : '',
-		submenu : [{
+		submenu : [
+		{
+			name : 'จุดที่ 0',
+			link : 'Specimen_Check_in_0.html'
+		},
+		{
 			name : 'จุดที่ 1',
-			link : 'Specimen_Check_in_1.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 2',
-			link : 'Specimen_Check_in_2.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 3',
-			link : 'Specimen_Check_in_3.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 4',
-			link : 'Specimen_Check_in_4.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 5',
-			link : 'Specimen_Check_in_5.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 6',
-			link : 'Specimen_Check_in_6.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 7.1',
-			link : 'Specimen_Check_in_7.1.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 7.2',
-			link : 'Specimen_Check_in_7.2.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 8.1',
-			link : 'Specimen_Check_in_8.1.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 8.2',
-			link : 'Specimen_Check_in_8.2.html'
+			link : 'Specimen_Check_in_0.html'
 		},
 		{
 			name : 'จุดที่ 9',
-			link : 'Specimen_Check_in_9.html'
+			link : 'Specimen_Check_in_0.html'
 		}
 		]
 	},
