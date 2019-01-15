@@ -187,7 +187,7 @@
                           </tbody>
                           <tfoot>
                             <tr>
-                              <td colspan="4"></td>
+                              <td colspan="5"></td>
                               <td><span class="bg-light px-3">New:</span> 34</td>
                               <td><span class="bg-warning px-3">Receive:</span> 34</td>
                               <td><span class="bg-success px-3">Complete:</span> 34</td>
@@ -211,7 +211,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-sm-3 col-form-label">Hospotalization number:</label>
+                              <label class="col-sm-3 col-form-label">Lab number:</label>
                               <div class="col-sm-9">
                                 <input type="text" class="form-control" />
                               </div>
@@ -219,7 +219,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-sm-3 col-form-label">Alternate patient num.:</label>
+                              <label class="col-sm-3 col-form-label">Alternate patient number:</label>
                               <div class="col-sm-9">
                                 <input type="text" class="form-control" />
                               </div>
@@ -227,7 +227,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-sm-3 col-form-label">Doctor:</label>
+                              <label class="col-sm-3 col-form-label">Hospitalization number:</label>
                               <div class="col-sm-9">
                                 <input type="text" class="form-control" />
                               </div>
@@ -243,39 +243,33 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Doctor:</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Last name:</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
                               <label class="col-sm-3 col-form-label">Location:</label>
                               <div class="col-sm-9">
-                                <input type="text" class="form-control" />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group row">
-                              <label class="col-sm-3 col-form-label">First name:</label>
-                              <div class="col-sm-9">
-                                <input type="text" class="form-control" />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group row">
-                              <label class="col-sm-3 col-form-label">Order date:</label>
-                              <div class="col-sm-9 input-group date" data-provide="datepicker">
                                 <input type="text" class="form-control" value="">
-                                <div class="input-group-addon">
-                                  <i class="fa fa-calendar"></i>
-                                </div>
                               </div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
                               <label class="col-sm-3 col-form-label">Birthdate:</label>
-                              <div class="col-sm-9 input-group date" data-provide="datepicker">
-                                <input type="text" class="form-control" value="">
-                                <div class="input-group-addon">
-                                  <i class="fa fa-calendar"></i>
-                                </div>
+                              <div class="col-sm-6">
+                                <input type="date" class="form-control" value="">
                               </div>
                             </div>
                           </div>
@@ -283,10 +277,16 @@
                             <div class="form-group row">
                               <label class="col-sm-3 col-form-label">Sex:</label>
                               <div class="col-sm-9">
-                                <select class="form-control" id="sex">
-                                  <option>Male</option>
-                                  <option>Female</option>
-                                </select>
+                               <div class="form-check-inline">
+                                  <label class="form-check-label" for="radio1">
+                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked> Male
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label" for="radio2">
+                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2"> Female
+                                  </label>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -300,7 +300,35 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group row">
-                              <label class="col-sm-3 col-form-label">Order comments:</label>
+                              <label class="col-sm-3 col-form-label">Patient Type:</label>
+                              <div class="col-sm-9">
+                                <select class="form-control" id="sel1">
+                                  <option>Others</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Trx number:</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Patient status:</label>
+                              <div class="col-sm-9">
+                                <select class="form-control" id="sel1">
+                                  <option>Others</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Order comment:</label>
                               <div class="col-sm-9">
                                 <input type="text" class="form-control" />
                               </div>
@@ -309,6 +337,34 @@
                         </div>
                       </div>
                     </div>
+
+
+                    <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value=""> Requet label
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value=""> Specimen label
+                                </label>
+                              </div>
+
+
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="text-right">
+                                <button type="button" class="btn">Confirm</button>
+                                <button type="button" class="btn">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                   </div>
                 </div>
