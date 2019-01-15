@@ -104,7 +104,43 @@
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
-                          <div class="col-md-12"> </div>
+                            <div class="col-md-3">
+                              <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Search:</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <table class="w-100">
+                                <tr>
+                                  <td width="47%">
+                                    <input type="date" class="form-control" value="">
+                                  </td>
+                                  <td width="6%" align="center">to</td>
+                                  <td width="47%">
+                                    <input type="date" class="form-control" value="">
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group row">
+                                <div class="col-sm-6">
+                                  <select class="form-control" id="sex">
+                                    <option>Test Group</option>
+                                    <option>Special</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-6">
+                                  <select class="form-control" id="sex">
+                                    <option>Specimen</option>
+                                    <option>Others</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
                         </div>
                         <table class="table" id="table">
                           <thead>
@@ -127,7 +163,6 @@
                           </thead>
                           <tbody>
                             <tr v-for="(item,key) in items">
-
                               <td>
                                 <input type="checkbox" />
                               </td>
@@ -142,17 +177,22 @@
                               
                             </tr>
                           </tbody>
+                          <tfoot>
+                            <tr>
+                              <td colspan="5"></td>
+                              <td><span class="bg-light px-3">New:</span> 34</td>
+                              <td><span class="bg-warning px-3">Receive:</span> 34</td>
+                              <td><span class="bg-success px-3">Complete:</span> 34</td>
+                              <td><span class="bg-danger px-3">Reject:</span> 34</td>
+                            </tr>
+                          </tfoot>
                         </table>
                       </div>
                     </div>
 
-                    <br>
 
                     <div class="card">
                       <div class="card-body p-3">
-                        <div class="text-primary mb-3">
-                          <h5>Patient and order details</h5>
-                        </div>
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group row">
