@@ -3,8 +3,53 @@
 var menu = [
 	
 	{
-		name : 'Dashboard',
+		name : 'ลงทะเบียน',																																																																																																																																																							
 		link : 'index.html',
+		icon : 'fa fa-unlock-alt',
+	},
+	{
+		name : 'สถานะห้อง',
+		link : 'status.html',
+		icon : '',
+	},
+	{
+		name : 'คำนวนค่าใช้จ่าย',
+		link : 'calculate.html',
+		icon : '',
+	},
+	{
+		name : 'บิล',
+		link : '',
+		icon : '',
+	},
+	{
+		name : 'กำหนดค่าใช้จ่าย',
+		link : '',
+		icon : '',
+	},
+	{
+		name : 'แก้ไขและลบข้อมูล',
+		link : '',
+		icon : '',
+	},
+	{
+		name : 'แก้ไขเกี่ยวกับเรา',
+		link : '',
+		icon : '',
+	},
+	{
+		name : 'Chat',
+		link : '',
+		icon : '',
+	},
+	{
+		name : 'จัดการหน้าข่าวสาร',
+		link : '',
+		icon : '',
+	},
+	{
+		name : 'Kaycard',
+		link : '',
 		icon : '',
 	},
 	{
@@ -12,103 +57,6 @@ var menu = [
 		link : 'Siriraj_log.html',
 		icon : '',
 	},
-	{
-		name : 'Specimen check-in',
-		link : '',
-		icon : '',
-		submenu : [
-		{
-			name : 'จุดที่ 0',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 1',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 2',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 3',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 4',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 5',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 6',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 7.1',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 7.2',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 8.1',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 8.2',
-			link : 'Specimen_Check_in_0.html'
-		},
-		{
-			name : 'จุดที่ 9',
-			link : 'Specimen_Check_in_0.html'
-		}
-		]
-	},
-	{
-		name : 'Statistic report',
-		link : '',
-		icon : '',
-		submenu : [{
-			name : '1. รายงานผล (TAT)',
-			link : 'report_tat.html'
-		},
-		{
-			name : '2. ระยะเวลา Single Queue -> OPD Register',
-			link : 'Siriraj_report1.html'
-		},
-		{
-			name : '3. ระยะเวลา OPD Register -> รับใบคืน',
-			link : 'Siriraj_report2.html'
-		},
-		{
-			name : '4. ระยะเวลา ใบรับคืน -> จ่ายเงิน',
-			link : 'Siriraj_report3.html'
-		},
-		{
-			name : '5. ระยะเวลา จ่ายเงิน -> เจาะเลือด',
-			link : 'Siriraj_report4.html'
-		},
-		{
-			name : '6. ระยะเวลา เจาะเลือด -> Check in โต๊ะ 20',
-			link : 'Siriraj_report5.html'
-		},
-		{
-			name : '7. ระยะเวลา Check in โต๊ะ 20 -> Check out ',
-			link : 'Siriraj_report6.html'
-		},
-		{
-			name : '8. ระยะเวลา Check out -> CentralLab',
-			link : 'Siriraj_report7.html'
-		},
-		{
-			name : '9. ระยะเวลา CentralLab -> Middlewares',
-			link : 'Siriraj_report8.html'
-		}
-		]
-	}
 ];
 var data = "";
 

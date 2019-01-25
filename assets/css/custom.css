@@ -26,7 +26,10 @@ input:hover{
 input:focus{
     border:1px solid black !important;
 }
-
+.responsive-table {
+    width: 100%;
+    overflow-x: scroll;
+}
 .sidebar .nav li.active > a {
     background: #0258a2;
     color: #FFFFFF;
@@ -245,7 +248,9 @@ a {
 .card.card-imensiveblue {
     background-color: #13395a;
 }
-
+.btn {
+    cursor: pointer;
+}
 
 @media (max-width: 414px){
 	.footer .copyright {
